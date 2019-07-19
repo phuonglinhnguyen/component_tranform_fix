@@ -1,10 +1,9 @@
 class Config {
   constructor() {
-    
     this.name = "";
     this.active = true;
     this.cron_trigger = "";
-    this.project_id ="5b9f49f8ea99f2002092b9cc";
+    this.project_id ="";
     this.filter = {
       collector: {
         doc_status: "350",

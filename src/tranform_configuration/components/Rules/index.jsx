@@ -1,52 +1,39 @@
-import React from "react";
-import { withStyles } from "@material-ui/core/styles";
-import Grid from "@material-ui/core/Grid";
-import Common from "./Common";
-import Content from "./Content";
+import React from 'react';
+import { withStyles } from '@material-ui/core/styles';
+import Common from './Common';
+import Content from './Content';
 
 const styles: any = (theme: any) => {
-  return {
-    wrapForm: {
-      display: "flex",
-      justifyContent: "space-around"
-    },
-    formControl: {
-      boxShadow: "-4px 3px 33px -10px rgba(0,0,0,0.75)",
-      margin: `${theme.spacing.unit * 3}px 0px ${theme.spacing.unit * 3}px 0px`,
-      padding: theme.spacing.unit * 2,
-      minHeight: "200px"
-    }
-  };
+	return {};
 };
 
 export interface IDefautProps {
-  classes?: any;
-  styles?: any;
-  theme?: any;
-  config?: any;
-  setConfig?: any;
+	styles?: any,
+	theme?: any,
+	config?: any,
+	setConfig?: any,
+	configValidators?: any,
+	setConfigValidator?: any
 }
 
-const Rules: React.FC<IDefautProps> = props => {
-  const { classes, config, setConfig } = props;
-  return (
-    <React.Fragment>
-      <Grid className={classes.wrapForm} spacing={24}>
-        <Grid item xs={12} md={6} className={classes.formControl}>
-          <Common
-            config={config}
-            setConfig={setConfig}
-          />
-        </Grid>
-        <Grid item xs={12} md={6} className={classes.formControl}>
-          <Content
-            config={config}
-            setConfig={setConfig}
-          />
-        </Grid>
-      </Grid>
-    </React.Fragment>
-  );
+const Rules: React.FC<IDefautProps> = (props) => {
+	const { config, setConfig, configValidators, setConfigValidator } = props;
+	return (
+		<React.Fragment>
+			<Common
+				config={config}
+				setConfig={setConfig}
+				setConfigValidator={setConfigValidator}
+				configValidators={configValidators}
+			/>
+			<Content
+				config={config}
+				setConfig={setConfig}
+				setConfigValidator={setConfigValidator}
+				configValidators={configValidators}
+			/>
+		</React.Fragment>
+	);
 };
 
 export default withStyles(styles, { withTheme: true })(Rules);
