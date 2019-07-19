@@ -156,6 +156,8 @@ const Common: React.FC<IDefautProps> = (props) => {
 				setTestResult('');
 			}
 		} else if (mode === 'edit') {
+			const checkEmptyNameEdit = checkIsEmptyCommon(commonName);
+			if (!checkEmptyNameEdit) return;
 			const newCommons = common.map((newItem) => {
 				const key = Object.keys(newItem)[0];
 
@@ -167,8 +169,6 @@ const Common: React.FC<IDefautProps> = (props) => {
 				}
 				return newItem;
 			});
-
-			const checkEmptyNameEdit = checkIsEmptyCommon(commonName);
 
 			if (checkEmptyNameEdit) {
 				setConfig({

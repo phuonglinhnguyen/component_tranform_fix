@@ -222,29 +222,30 @@ const ContentItem: React.FC<IDefautProps> = (props) => {
 				setContentTest(null);
 			}
 		} else if (mode === 'edit') {
+			const checkEmptyNameEdit = checkIsEmpty(contentName);
+			if (!checkEmptyNameEdit) return;
 			const newContentArray = contentArray.map((_contentItem) => {
 				if (_contentItem.contentItem.dataKey === contentItem.dataKey) {
 					return { contentItem: { ...contentItem }, contentName };
 				}
 				return _contentItem;
 			});
-			console.log({newContentArray});
-			console.log(newContentArray.contentName);
-			const checkEmptyNameEdit = checkIsEmpty(newContentArray.contentName);
-			setConfig({
-				...config,
-				rules: {
-					...config.rules,
-					content: {
-						...config.rules.content,
-						[contentName]: contentItem
+			if (checkEmptyNameEdit) {
+				setConfig({
+					...config,
+					rules: {
+						...config.rules,
+						content: {
+							...config.rules.content,
+							[contentName]: contentItem
+						}
 					}
-				}
-			});
-			setMode('add');
-			setContentArray(newContentArray);
-			setContentItem(null);
-			setContentTest(null);
+				});
+				setMode('add');
+				setContentArray(newContentArray);
+				setContentItem(null);
+				setContentTest(null);
+			}
 		}
 	};
 

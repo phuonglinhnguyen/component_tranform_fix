@@ -1,0 +1,214 @@
+{
+  "_id" : ObjectId("5d2883d2fe9a4717d749a6d8"),
+  "name" : "EXPORT_101_190628_099_61797_001_EN_M",
+  "cron_trigger" : "0/10 * * * * ?",
+  "export_destination" : "/mnt/x-storage/Projects_SIT/101_190628_099_61797_001_EN_M_Export",
+  "active" : true,
+  "project_id" : ObjectId("5d1c75236e3d12001466abf5"),
+  "collect_export_option" : {
+      "type" : "BATCH",
+      "number_of_files" : "many"
+  },
+  "export_format" : [ 
+      {
+          "is_distinct" : false,
+          "type" : "csv",
+          "fields_export" : [ 
+              {
+                  "name" : "batch_id",
+                  "value" : "batch_id"
+              }, 
+              {
+                  "name" : "management_id",
+                  "value" : "doc_id"
+              }, 
+              {
+                  "name" : "sequence_id",
+                  "value" : "sequence_id"
+              }, 
+              {
+                  "name" : "SelfNamePrefix_orig",
+                  "value" : "Prefix"
+              }, 
+              {
+                  "name" : "SelfGivenName_orig",
+                  "value" : "Given_Name"
+              }, 
+              {
+                  "name" : "SelfSurname_orig",
+                  "value" : "Surname"
+              }, 
+              {
+                  "name" : "SelfNameSuffix_orig",
+                  "value" : "Suffix"
+              }, 
+              {
+                  "name" : "SelfMarriageAge_orig",
+                  "value" : "Event_Age"
+              }, 
+              {
+                  "name" : "SelfVitalDay_orig",
+                  "value" : "Event_Day"
+              }, 
+              {
+                  "name" : "SelfVitalMonth_orig",
+                  "value" : "Event_Month"
+              }, 
+              {
+                  "name" : "SelfVitalYear_orig",
+                  "value" : "Event_Year"
+              }, 
+              {
+                  "name" : "SelfBirthDay_orig",
+                  "value" : "Birth_Day"
+              }, 
+              {
+                  "name" : "SelfBirthMonth_orig",
+                  "value" : "Birth_Month"
+              }, 
+              {
+                  "name" : "SelfBirthYear_orig",
+                  "value" : "Birth_Year"
+              }, 
+              {
+                  "name" : "SelfBirthPlace_orig",
+                  "value" : "Birthplace"
+              }, 
+              {
+                  "name" : "SelfMarriageEngagementDay_orig",
+                  "value" : "Engagement_Day"
+              }, 
+              {
+                  "name" : "SelfMarriageEngagementMonth_orig",
+                  "value" : "Engagement_Month"
+              }, 
+              {
+                  "name" : "SelfMarriageEngagementYear_orig",
+                  "value" : "Engagement_Year"
+              }, 
+              {
+                  "name" : "FatherGivenName_orig",
+                  "value" : "Father_Given_Name"
+              }, 
+              {
+                  "name" : "FatherSurname_orig",
+                  "value" : "Father_Surname"
+              }, 
+              {
+                  "name" : "MotherGivenName_orig",
+                  "value" : "Mother_Given_Name"
+              }, 
+              {
+                  "name" : "MotherSurname_orig",
+                  "value" : "Mother_Surname"
+              }, 
+              {
+                  "name" : "MotherMaidenName_orig",
+                  "value" : "Mother_Maiden_Name"
+              }, 
+              {
+                  "name" : "SpouseNamePrefix_orig",
+                  "value" : "Spouse_Prefix"
+              }, 
+              {
+                  "name" : "SpouseGivenName_orig",
+                  "value" : "Spouse_Given_Name"
+              }, 
+              {
+                  "name" : "SpouseSurname_orig",
+                  "value" : "Spouse_Surname"
+              }, 
+              {
+                  "name" : "SpouseMaidenName_orig",
+                  "value" : "Spouse_Maiden_Name"
+              }, 
+              {
+                  "name" : "SpouseNameSuffix_orig",
+                  "value" : "Spouse_Suffix"
+              }, 
+              {
+                  "name" : "SpouseMarriageAge_orig",
+                  "value" : "Spouse_Age"
+              }, 
+              {
+                  "name" : "SpouseBirthPlace_orig",
+                  "value" : "Spouse_Birthplace"
+              }, 
+              {
+                  "name" : "SpouseBirthDay_orig",
+                  "value" : "Spouse_Birth_Day"
+              }, 
+              {
+                  "name" : "SpouseBirthMonth_orig",
+                  "value" : "Spouse_Birth_Month"
+              }, 
+              {
+                  "name" : "SpouseBirthYear_orig",
+                  "value" : "Spouse_Birth_Year"
+              }, 
+              {
+                  "name" : "FatherInLawGivenName_orig",
+                  "value" : "Spouse_Father_Given_Name"
+              }, 
+              {
+                  "name" : "FatherInLawSurname_orig",
+                  "value" : "Spouse_Father_Surname"
+              }, 
+              {
+                  "name" : "MotherInLawGivenName_orig",
+                  "value" : "Spouse_Mother_Given_Name"
+              }, 
+              {
+                  "name" : "MotherInLawSurname_orig",
+                  "value" : "Spouse_Mother_Surname"
+              }, 
+              {
+                  "name" : "MotherInLawMaidenName_orig",
+                  "value" : "Spouse_Mother_Maiden_Name"
+              }, 
+              {
+                  "name" : "RecordType_orig",
+                  "value" : "Eventype"
+              }, 
+              {
+                  "name" : "keyers",
+                  "value" : "keyers"
+              }, 
+              {
+                  "name" : "notes",
+                  "value" : "notes"
+              }
+          ],
+          "fileName" : "fileNameData",
+          "delimiter" : ";"
+      }, 
+      {
+          "is_distinct" : true,
+          "type" : "csv",
+          "fields_export" : [ 
+              {
+                  "name" : "batch_id",
+                  "value" : "batch_id"
+              }, 
+              {
+                  "name" : "id",
+                  "value" : "doc_id"
+              }, 
+              {
+                  "name" : "filepath",
+                  "value" : "File_Path"
+              }, 
+              {
+                  "name" : "filename",
+                  "value" : "File_name_uri"
+              }, 
+              {
+                  "name" : "form",
+                  "value" : "form_name"
+              }
+          ],
+          "fileName" : "fileNameM",
+          "delimiter" : ";"
+      }
+  ]
+}

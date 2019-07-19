@@ -1,14 +1,14 @@
 import { GET_LIST, UPDATE, CREATE, DELETE, fetchJson } from "@dgtx/coreui";
 import { APP_NAME, API_ENDPOINT } from "../../constants";
-import { getDataTranform } from "../faKedata";
-const data = getDataTranform();
+import { getDataExport } from "../faKedata";
+const data = getDataExport();
 export default (type: string, resource: string, params: any) => {
   switch (type) {
     //  GET : /api/apps/:app_name/projects/:project_id/transform-configuration
     case GET_LIST: {
       const { projectId } = params;
       return fetchJson(
-        `${API_ENDPOINT}/apps/${APP_NAME}/projects/${projectId}/transform-configuration`,
+        `${API_ENDPOINT}/apps/${APP_NAME}/projects/${projectId}/export-configuration`,
         { method: "GET" }
       );
     }

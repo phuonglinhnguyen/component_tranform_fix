@@ -23,8 +23,8 @@ export const getDataTranform = () => {
               "function(input){return input? input.toString().replace(/\\B(?=(\\d{3})+(?!\\d))/g, ',') : '';}"
           },
           {
-            XX: "12345",
-          },
+            XX: "12345"
+          }
         ],
         content: {
           H4: {

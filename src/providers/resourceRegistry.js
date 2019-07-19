@@ -9,7 +9,8 @@ import {
     projectFunction,
     general_configuration,
     export_format_and_transformation,
-    tranform_configuration
+    tranform_configuration,
+    export_configuration
 } from './resources'
 
 export default {
@@ -22,5 +23,6 @@ export default {
     [PROJECT_FUNCTIONS]: projectFunction,
     general_configuration,
     export_format_and_transformation,
-    tranform_configuration
+    tranform_configuration,
+    export_configuration
 };

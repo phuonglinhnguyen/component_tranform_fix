@@ -1,0 +1,61 @@
+{
+  "_id" : ObjectId("5ca33b6ae5edb54a98ebfac8"),
+  "name" : "EXPORT_0",
+  "cron_trigger" : "0/10 * * * * ?",
+  "export_destination" : "/home/administrator",
+  "active" : false,
+  "project_id" : ObjectId("5b9f49f8ea99f2002092b9cc"),
+  "priority" : "1",
+  "project_name" : "PR_1",
+  "collect_export_option" : {
+      "type" : "BATCH"
+  },
+  "export_format" : {
+      "type" : "json",
+      "fields_export" : [ 
+          {
+              "name" : "category",
+              "value" : "H4",
+              "childs" : {
+                  "name" : "child_node",
+                  "fields" : [ 
+                      {
+                          "name" : "terrace",
+                          "value" : "H35"
+                      }, 
+                      {
+                          "name" : "live-sport",
+                          "value" : "H9"
+                      }, 
+                      {
+                          "name" : "recommendation",
+                          "value" : "H58"
+                      }
+                  ]
+              }
+          }, 
+          {
+              "name" : "sub-category",
+              "value" : "H0"
+          }, 
+          {
+              "name" : "open",
+              "value" : "H3"
+          }, 
+          {
+              "name" : "payment",
+              "value" : "H9"
+          }, 
+          {
+              "name" : "awning",
+              "value" : "H35"
+          }, 
+          {
+              "name" : "accessibility",
+              "value" : "H58"
+          }
+      ],
+      "fileName" : "H4",
+      "rootName" : "root"
+  }
+}

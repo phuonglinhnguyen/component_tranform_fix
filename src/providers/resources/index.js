@@ -8,6 +8,7 @@ import projectFunction from './projectFunction'
 import export_format_and_transformation from './export_format_and_transformation'
 import general_configuration from './general_configuration'
 import tranform_configuration from './tranform_configuration'
+import export_configuration from './export_configuration'
 // import remainHumanTask from './_remainHumanTask'
 // import remainDocument from './_remainDocument'
 
@@ -32,6 +33,7 @@ export {
     general_configuration,
     export_format_and_transformation,
     tranform_configuration,
+    export_configuration,
     // remainHumanTask,
     // remainDocument
 }

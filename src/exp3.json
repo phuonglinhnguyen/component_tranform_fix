@@ -1,0 +1,93 @@
+{
+  "_id" : ObjectId("5d258a2ffe9a4717d73a0234"),
+  "name" : "EXPORT_089",
+  "cron_trigger" : "0/10 * * * * ?",
+  "export_destination" : "/mnt/x-storage/Projects_SIT/089_190611_002_505657/Export/hoaipt",
+  "active" : false,
+  "project_id" : ObjectId("5d099a031927c3001465f932"),
+  "collect_export_option" : {
+      "type" : "BATCH",
+      "number_of_files" : "many"
+  },
+  "export_format" : [ 
+      {
+          "type" : "csv",
+          "fields_export" : [ 
+              {
+                  "name" : "Lfd. Nr.",
+                  "auto_increase" : "1"
+              }, 
+              {
+                  "name" : "Capture Date",
+                  "value" : "capture_date"
+              }, 
+              {
+                  "name" : "Merchant Name",
+                  "value" : "merchant_name"
+              }, 
+              {
+                  "name" : "Txn Amount",
+                  "value" : "foreign_txn_amount"
+              }, 
+              {
+                  "name" : "Txn Currency",
+                  "value" : "foreign_txn_currency"
+              }, 
+              {
+                  "name" : "Foreign Txn Amount",
+                  "value" : "foreign_txn_amount"
+              }, 
+              {
+                  "name" : "Foreign Txn Currency",
+                  "value" : "foreign_txn_currency"
+              }, 
+              {
+                  "name" : "Rechnung Nr.",
+                  "value" : "rechnung_nummer"
+              }, 
+              {
+                  "name" : "Ust-Identnummer des Merchants",
+                  "value" : "ust_ident_des"
+              }, 
+              {
+                  "name" : "Umsatzsteuersatz 1",
+                  "value" : "umsatzsteuersatz_1"
+              }, 
+              {
+                  "name" : "Umsatzsteuersatz 2",
+                  "value" : "umsatzsteuersatz_2"
+              }, 
+              {
+                  "name" : "Leistungsbezeichnung 1",
+                  "value" : "leistungsbezeichnung_1"
+              }, 
+              {
+                  "name" : "Netto Betrag pro Umsatzsteuersatz 1",
+                  "value" : "netto_betrag_1"
+              }, 
+              {
+                  "name" : "Currency",
+                  "value" : "foreign_txn_currency"
+              }, 
+              {
+                  "name" : "Leistungsbezeichnung 2",
+                  "value" : "leistungsbezeichnung_2"
+              }, 
+              {
+                  "name" : "Card Last 4 Digits",
+                  "value" : "card_last_4_digits"
+              }, 
+              {
+                  "name" : "Category",
+                  "value" : "category"
+              }, 
+              {
+                  "name" : "Receipt Name",
+                  "value" : "receipt_name"
+              }
+          ],
+          "fileName" : "fileName",
+          "delimiter" : ";"
+      }
+  ]
+}
