@@ -8,7 +8,7 @@
     "@material-ui/icons": "^4.2.0",
     "connected-react-router": "^6.5.0",
     "font-awesome": "^4.7.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.23",
     "react": "^16.8.6",
     "react-ace": "^7.0.2",
     "react-dom": "^16.8.6",
